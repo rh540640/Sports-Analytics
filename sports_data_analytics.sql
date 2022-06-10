@@ -84,6 +84,7 @@ SELECT * FROM matches
 WHERE result_margin > 100;
 
 --9. Fetch data of all the matches where the final scores of both teams are tied and order it in descending order of the date.
+
 SELECT * FROM matches
 WHERE result = 'tie'
 ORDER BY date DESC;
@@ -93,7 +94,13 @@ ORDER BY date DESC;
 SELECT COUNT(DISTINCT city) 
 FROM matches;
 
---Count of cities with duplicate values enabled
+--11. Get the count of venues that have hosted IPL matches.
 
-SELECT COUNT(city)
+SELECT COUNT(DISTINCT venue)
 FROM matches;
+
+--12. Fetch data of 10 matches played before 2015.
+
+SELECT * FROM matches
+WHERE date < '2015-01-01'
+LIMIT 10;
