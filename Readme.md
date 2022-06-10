@@ -186,7 +186,7 @@ FROM matches;
 
 ![Alt text](count_city.png)
 
-**11. Get the count of venues that have hosted ILP matches.**
+**11. Get the count of venues that have hosted IPL matches.**
 
 ```sql
 SELECT COUNT(DISTINCT venue)
