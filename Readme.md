@@ -20,7 +20,7 @@ As a data analysis intern, you have to analyse sports data for a client. You are
 
 **Read File**
 
-[Readme.md](https://github.com/rh540640/Sports-Analytics/edit/master/Readme.md)
+[Readme.md]([https://github.com/rh540640/Sports-Analytics/edit/master/Readme.md](https://github.com/rh540640/Sports-Analytics/blob/master/Readme.md))
 
 
 ## About the Data
