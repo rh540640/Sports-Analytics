@@ -8,7 +8,7 @@ As a data analysis intern, you have to analyse sports data for a client. You are
 
 ## *_Quick Access_*
 
-**DataSets*
+**DataSets**
 
 [IPL_matches.csv](https://github.com/rh540640/Sports-Analytics/blob/master/IPL_matches.csv)
 
