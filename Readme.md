@@ -6,6 +6,21 @@
 
 As a data analysis intern, you have to analyse sports data for a client. You are given two datasets related to IPL (Indian Premier League) cricket matches. One dataset contains ball-by-ball data and the other contains match-wise data. You have to import the datasets into an SQL database and perform the tasks given in this assignment to find important insights from this dataset.
 
+## *_Quick Access_*
+
+**DataSets*
+
+[IPL_matches.csv](https://github.com/rh540640/Sports-Analytics/blob/master/IPL_matches.csv)
+[IPL_Ball.csv](https://github.com/rh540640/Sports-Analytics/blob/master/IPL_Ball.csv)
+
+**Code**
+
+[sports_data_analytics.sql](https://github.com/rh540640/Sports-Analytics/blob/master/sports_data_analytics.sql)
+
+**Read File**
+
+[Readme.md](https://github.com/rh540640/Sports-Analytics/edit/master/Readme.md)
+
 
 ## About the Data
 
@@ -91,7 +106,7 @@ DESCRIBE deliveries;
 
 ![Alt text](describe_deliveries.png)
 
-**3. Import data from CSV file 'IPL_matches.csv' attached in resources to `matches`**
+**3. Import data from CSV file 'IPL_matches.csv' attached in resources to `matches`.**
 
 *Prerequisite*
 
