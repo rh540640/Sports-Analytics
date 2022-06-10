@@ -30,7 +30,7 @@ use ipl;
 
 **1. Create a table named `matches` with appropriate data types for columns.**
 
-`id` is used as `PRIMARY KEY` here.
+`id` is used as `PRIMARY KEY` here
 ```sql
 CREATE TABLE matches(
     id INT PRIMARY KEY,
