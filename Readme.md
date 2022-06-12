@@ -219,3 +219,69 @@ WHERE date < '2015-01-01'
 LIMIT 10;
 ```
 ![Alt text](date_before.png)
+
+**13. Select the 10 matches ordered by winner, venue then city in descending order.**
+
+```sql
+SELECT * FROM matches
+ORDER BY winner DESC, venue DESC, city DESC
+LIMIT 10;
+```
+
+![winner_venue_city](https://user-images.githubusercontent.com/106378212/173237746-f121a140-aec4-4960-a102-08b73a590dd6.png)
+
+**14. Name different Non-strikers played in the IPL.**
+```sql
+SELECT DISTINCT non_striker
+FROM deliveries;
+```
+
+![non_striker](https://user-images.githubusercontent.com/106378212/173237835-ece52a19-e8e2-497f-a97b-037e83340e09.png)
+
+**15. Find all the winner teams who have result margin above 100 and won by runs.**
+
+```sql
+SELECT * FROM matches
+WHERE result_margin > 100 AND result = 'runs';
+```
+
+![margin_above100](https://user-images.githubusercontent.com/106378212/173237903-11df9a69-addc-4187-abdc-0351cbc3b5ea.png)
+
+**16. Find average and sum of result margins when Rajasthan Royals is winner.**
+
+```sql
+SELECT AVG(result_margin) FROM matches
+WHERE winner = 'Rajasthan Royals';
+```
+
+```sql
+SELECT SUM(result_margin) FROM matches
+WHERE winner = 'Rajasthan Royals';
+```
+
+![margin_rroyals](https://user-images.githubusercontent.com/106378212/173237985-5526e8a0-cb65-4a12-ad45-2532248b8428.png)
+![sum_rroyals](https://user-images.githubusercontent.com/106378212/173238047-321ad8a3-651a-40eb-8699-b9a001b4dfa9.png)
+
+**17. Find name of stadiums that are named under associations and rename it (column name) as Stadium. Find which cities these stadiums are located.**
+
+```sql
+SELECT DISTINCT venue AS  Stadium, city FROM matches
+WHERE venue LIKE '%Association%';
+```
+
+![association](https://user-images.githubusercontent.com/106378212/173238148-4e13663f-e512-4da5-b4aa-1a4cd6fb481a.png)
+
+**18. Create a database comprising of id, player of match, batsman and bowler usingleft join of 10 rows.**
+
+```sql
+SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
+FROM matches
+LEFT JOIN deliveries
+ON matches.id = deliveries.id
+LIMIT 10;
+```
+![left_join](https://user-images.githubusercontent.com/106378212/173238744-2904305f-423c-4c28-b8bf-5df9c2c66a5e.png)
+
+
+
+
