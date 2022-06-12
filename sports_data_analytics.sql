@@ -104,3 +104,46 @@ FROM matches;
 SELECT * FROM matches
 WHERE date < '2015-01-01'
 LIMIT 10;
+
+--13. Select the 10 matches ordered by winner, venue then city in descending order.
+
+SELECT * FROM matches
+ORDER BY winner DESC, venue DESC, city DESC
+LIMIT 10;
+
+--14. Name different Non-strikers played in the IPL
+
+SELECT DISTINCT non_striker
+FROM deliveries;
+
+--15. Find all the winner teams who have result margin above 100 and won by runs.
+
+SELECT * FROM matches
+WHERE result_margin > 100 AND result = 'runs';
+
+--16. Find average and sum of result margins when Rajasthan Royals is winner.
+
+SELECT AVG(result_margin) FROM matches
+WHERE winner = 'Rajasthan Royals';
+
+SELECT SUM(result_margin) FROM matches
+WHERE winner = 'Rajasthan Royals';
+
+--17. Find name of stadiums that are named under associations and rename it (column name) as Stadium. 
+--Find which cities these stadiums are located.
+
+SELECT DISTINCT venue AS  Stadium, city FROM matches
+WHERE venue LIKE '%Association%';
+
+--18. Create a database comprising of id, player of match, batsman and bowler using
+--left join and right join
+
+SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
+FROM matches
+LEFT JOIN deliveries
+ON matches.id = deliveries.id;
+
+SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
+FROM matches
+JOIN deliveries
+ON matches.id = deliveries.id;
