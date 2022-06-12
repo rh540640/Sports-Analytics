@@ -136,14 +136,10 @@ SELECT DISTINCT venue AS  Stadium, city FROM matches
 WHERE venue LIKE '%Association%';
 
 --18. Create a database comprising of id, player of match, batsman and bowler using
---left join and right join
+--left join of 10 rows.
 
 SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
 FROM matches
 LEFT JOIN deliveries
 ON matches.id = deliveries.id;
 
-SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
-FROM matches
-JOIN deliveries
-ON matches.id = deliveries.id;
