@@ -141,5 +141,6 @@ WHERE venue LIKE '%Association%';
 SELECT matches.id, matches.player_of_match, deliveries.batsman, deliveries.bowler
 FROM matches
 LEFT JOIN deliveries
-ON matches.id = deliveries.id;
+ON matches.id = deliveries.id
+LIMIT 10;
 
