@@ -174,9 +174,9 @@ LIMIT 20;
 
 ```sql
 SELECT * FROM matches
-WHERE date = '2008-05-02';
+WHERE date = '2013-05-02';
 ```
-![Alt text](28-05-02.png)
+![2013-05-02](https://user-images.githubusercontent.com/106378212/173740430-6b1755c6-9a7f-4dea-a2b1-e9a3df390384.png)
 
 **8. Fetch data of all the matches where the margin of victory is more than 100 runs.**
 
