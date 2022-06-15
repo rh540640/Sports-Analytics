@@ -76,7 +76,7 @@ LIMIT 20;
 --7. Fetch data of all the matches played on 2nd May 2013.
 
 SELECT * FROM matches
-WHERE date = '2008-05-02';
+WHERE date = '2013-05-02';
 
 --8. Fetch data of all the matches where the margin of victory is more than 100 runs.
 
